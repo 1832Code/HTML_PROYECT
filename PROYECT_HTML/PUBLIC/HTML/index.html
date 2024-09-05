@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyect</title>
+    <!--
+    <meta
+      name="metadato"
+      content="valor"
+      http-equiv="cabecera-http"
+      scheme="esquema"
+    />
+    <!--Base de un metaddato-->
+    <!--Metadatos mas Importantes-->
+    <!-- <meta name="author" content="JoelDev" />
+    <meta name="description" content="Este es mi primera pagina web" />
+    <meta name="keywords" content="tutorial, desarrollo web, joelDev Code" />
+    <meta http-equiv="refresh" content="5; http://www.google.com" />
+-->
+    <!--ESTILOS DE LA PAGINA-->
+    <link rel="stylesheet" href="../STYLES/styles.css" />
+    <!--Iconos con Favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <div class="menu-contenier">
+        <img src="../ASSETS/IMG/logo.svg" alt="" class="logo01" />
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img src="../ASSETS/IMG/menu.png" alt="" class="menu-icons" />
+        </label>
+        <nav class="navbar">
+          <div class="menu_01">
+            <ul>
+              <li><a href="#Inico">Inicio</a></li>
+              <li><a href="#Servicios">Servicios</a></li>
+              <li><a href="#Productos">Productos</a></li>
+            </ul>
+          </div>
+          <img src="../ASSETS/IMG/logo.svg" alt="" class="logo2" />
+          <div class="menu_02">
+            <ul>
+              <li><a href="#Horario">Horario</a></li>
+            </ul>
+            <div class="socials">
+              <a href="#">
+                <div class="social">
+                  <a href="#">
+                    <div class="social">
+                      <img src="../ASSETS/IMG/s1.svg" alt="" />
+                    </div>
+                  </a>
+                </div>
+              </a>
+              <a href="#">
+                <div class="social">
+                  <img src="../ASSETS/IMG/s2.svg" alt="" />
+                </div>
+              </a>
+              <a href="#">
+                <div class="social">
+                  <img src="../ASSETS/IMG/s3.svg" alt="" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!---->
+      <div class="header-content container">
+        <div class="swiper mySwiper-1">
+          <div class="swiper-wrapper">
+            <!---->
+            <div class="swiper-slide">
+              <div class="slider">
+                <div class="slider-text">
+                  <h1>AMBURGUESA</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Adipisci, vero ratione facilis numquam quo delectus iste
+                    quod ipsa repellat unde, id velit perspiciatis aut
+                    voluptatum aperiam neque alias. Doloremque, excepturi!
+                  </p>
+                  <div class="botones">
+                    <a href="#" class="btn-1">Comprar</a>
+                    <a href="#" class="btn-1">Menu</a>
+                  </div>
+                </div>
+                <div class="slider-img">
+                  <img src="../ASSETS/IMG/slider1.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!---->
+            <div class="swiper-slide">
+              <div class="slider">
+                <div class="slider-text">
+                  <h1>AMBURGUESA 2</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Adipisci, vero ratione facilis numquam quo delectus iste
+                    quod ipsa repellat unde, id velit perspiciatis aut
+                    voluptatum aperiam neque alias. Doloremque, excepturi!
+                  </p>
+                  <div class="botones">
+                    <a href="#" class="btn-1">Comprar</a>
+                    <a href="#" class="btn-1">Menu</a>
+                  </div>
+                </div>
+                <div class="slider-img">
+                  <img src="../ASSETS/IMG/slider2.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!---->
+            <div class="swiper-slide">
+              <div class="slider">
+                <div class="slider-text">
+                  <h1>AMBURGUESA 3</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Adipisci, vero ratione facilis numquam quo delectus iste
+                    quod ipsa repellat unde, id velit perspiciatis aut
+                    voluptatum aperiam neque alias. Doloremque, excepturi!
+                  </p>
+                  <div class="botones">
+                    <a href="#" class="btn-1">Comprar</a>
+                    <a href="#" class="btn-1">Menu</a>
+                  </div>
+                </div>
+                <div class="slider-img">
+                  <img src="../ASSETS/IMG/slider3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!---->
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </header>
+    <!--MAIN de la Pagina -->
+    <main class="products">
+      <div class="tabs container">
+        <input
+          type="radio"
+          name="tabs"
+          id="tabs"
+          checked="checked"
+          class="tabInput"
+          value="1"
+        />
+        <label for="tab1">Burritos</label>
+        <div class="tab">
+          <div class="swiper mySwiper-2" id="1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <h4>Nuevo</h4>
+                    <img src="../ASSETS/IMG/food1.png" alt="" />
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>calidad premium</p>
+                    <span class="price">$80.00</span>
+                  </div>
+                </div>
+              </div>
+              <!---->
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <h4>Nuevo</h4>
+                    <img src="../ASSETS/IMG/food2.png" alt="" />
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>calidad premium</p>
+                    <span class="price">$80.00</span>
+                  </div>
+                </div>
+              </div>
+              <!---->
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <h4>Nuevo</h4>
+                    <img src="../ASSETS/IMG/food3.png" alt="" />
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>calidad premium</p>
+                    <span class="price">$80.00</span>
+                  </div>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <!---->
+        <input
+          type="radio"
+          name="tabs"
+          id="tabs2"
+          checked="checked"
+          class="tabInput"
+          value="2"
+        />
+        <label for="tab2">HAMUERGUESA</label>
+        <div class="tab">
+          <div class="swiper mySwiper-2" id="2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <h4>Nuevo</h4>
+                    <img src="../ASSETS/IMG/food2.png" alt="" />
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>calidad premium</p>
+                    <span class="price">$80.00</span>
+                  </div>
+                </div>
+              </div>
+              <!---->
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <h4>Nuevo</h4>
+                    <img src="../ASSETS/IMG/food2.png" alt="" />
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>calidad premium</p>
+                    <span class="price">$80.00</span>
+                  </div>
+                </div>
+              </div>
+              <!---->
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <h4>Nuevo</h4>
+                    <img src="../ASSETS/IMG/food3.png" alt="" />
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>calidad premium</p>
+                    <span class="price">$80.00</span>
+                  </div>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <!---->
+        <input
+          type="radio"
+          name="tabs"
+          id="tabs3"
+          checked="checked"
+          class="tabInput"
+          value="3"
+        />
+        <label for="tab3">Variedad</label>
+        <div class="tab">
+          <div class="swiper mySwiper-2" id="3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <h4>Nuevo</h4>
+                    <img src="../ASSETS/IMG/food3.png" alt="" />
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>calidad premium</p>
+                    <span class="price">$80.00</span>
+                  </div>
+                </div>
+              </div>
+              <!---->
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <h4>Nuevo</h4>
+                    <img src="../ASSETS/IMG/food2.png" alt="" />
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>calidad premium</p>
+                    <span class="price">$80.00</span>
+                  </div>
+                </div>
+              </div>
+              <!---->
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <h4>Nuevo</h4>
+                    <img src="../ASSETS/IMG/food3.png" alt="" />
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>calidad premium</p>
+                    <span class="price">$80.00</span>
+                  </div>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>

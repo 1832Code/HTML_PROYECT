@@ -1,0 +1,1 @@
+// Carpeta para archivos compilados o optimizados (después de build)
