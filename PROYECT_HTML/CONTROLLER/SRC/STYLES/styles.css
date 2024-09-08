@@ -1,0 +1,255 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 10px 20px;
+  position: relative;
+  background-color: rgba(34, 40, 49, 1);
+}
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* Barra de navegación */
+.NAV {
+  display: flex;
+  font-family: "Times New Roman", Times, serif;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.NAV .imgLogo {
+  width: 150px;
+  height: auto;
+}
+/* Menú de navegación */
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.menu ul li {
+  margin: 0;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: rgb(254, 254, 254);
+  font-weight: bold;
+  padding: 0px 10px;
+  font-size: 16px;
+}
+.menu ul li a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(242, 101, 7);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  padding: 10px;
+}
+
+/*ESTILOS DE LA IAMGEN PRINCIPAL*/
+/*BLOQUE 01*/
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding: 0 5%;
+}
+.content {
+  flex: 1;
+}
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.order-btn {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.order-btn:hover {
+  background-color: white;
+  color: chocolate;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1em;
+}
+.image-container {
+  flex: 1;
+  text-align: right;
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+.dots {
+  margin-top: 20px;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+.dot.active {
+  background-color: #ffc107;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+  .NAV {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu ul li {
+    margin-bottom: 10px;
+  }
+  .content h1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .content p {
+    text-align: center;
+  }
+  .content {
+    text-align: center;
+  }
+  .dots {
+    text-align: center;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .content,
+  .image-container {
+    flex: none;
+    width: 100%;
+  }
+  .image-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .image-container img {
+    max-width: 80%;
+    margin: 5px;
+  }
+}
+
+/*FLOOTER*/
+footer {
+  color: white;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+footer .Conteiners {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/*Sub01*/
+.Conteiners .Sub01 {
+  background-color: rgba(34, 40, 49, 1);
+  padding: 10px 20px;
+  display: flex;
+  border-radius: 5px;
+  gap: 20px;
+}
+.Sub01 {
+  margin: 10px;
+}
+.Sub01 h4 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 26px;
+}
+.Sub01 p {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  text-align: left;
+}
+.Sub01 .img img {
+  width: 100px; /* Ajusta el tamaño de las imágenes */
+  height: auto;
+}
+.Sub01 .info {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  text-align: left;
+}
+
+.info .parra b {
+  font-size: 28px;
+}
+.info #btnSecond {
+  border: none;
+  display: 10px 20px;
+  background-color: rgba(255, 190, 51, 1);
+  border-radius: 15px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.info #btnSecond:hover {
+  background-color: white;
+  color: rgb(255, 68, 0);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .SubMenu .Conteiners {
+    flex-direction: column;
+    text-align: center;
+  }
+  .Sub01 {
+    padding: 10px 20px;
+    margin: 20px;
+  }
+  .Sub01 .img img {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Sub01 .info {
+    flex-direction: column;
+    text-align: center;
+  }
+}
