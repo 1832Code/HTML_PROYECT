@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* General card styles */
+      .card {
+        width: 300px;
+        background-color: #f7f7f7;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      /* Styles for the image section */
+      .card-image {
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        border-bottom-left-radius: 50% 20%;
+      }
+
+      .card-image img {
+        max-width: 150px;
+        border-radius: 50%;
+      }
+
+      /* Styles for the content section */
+      .card-content {
+        background-color: #1e1e2d;
+        padding: 20px;
+        color: #ffffff;
+      }
+
+      .card-title {
+        font-size: 1.5em;
+        margin: 0;
+      }
+
+      .card-description {
+        font-size: 0.9em;
+        margin: 10px 0 20px;
+      }
+
+      /* Price and button section */
+      .card-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .card-price span {
+        font-size: 1.2em;
+      }
+
+      .cart-button {
+        background-color: #ffc107;
+        border: none;
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .cart-button img {
+        width: 20px;
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-image">
+        <img
+          src="/PROYECT_HTML/CONTROLLER/SRC/IMG/Section01/f1.png.png"
+          alt="Delicious Pizza"
+        />
+      </div>
+      <div class="card-content">
+        <h3 class="card-title">Delicious Pizza</h3>
+        <p class="card-description">
+          Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit,
+          magnam voluptatem repellendus sed eaque.
+        </p>
+        <div class="card-price">
+          <span>$20</span>
+          <button class="cart-button">
+            <img src="cart-icon.png" alt="Cart" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

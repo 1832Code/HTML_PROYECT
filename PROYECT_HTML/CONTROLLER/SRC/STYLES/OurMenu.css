@@ -1,3 +1,120 @@
 .Center-Block {
-  background-color: blueviolet;
+  background-color: rgb(224, 220, 224);
+}
+.Center-Block h3 {
+  color: rgb(0, 0, 0);
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  text-align: center;
+  font-size: 29px;
+}
+.Center-Block header {
+  background-color: rgb(255, 255, 255);
+}
+.Center-Block header .option {
+  color: rgb(189, 88, 88);
+}
+.option ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.option ul li {
+  margin: 0;
+}
+.option ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 0px 7px;
+  padding: 8px 13px;
+}
+.option ul li a:hover {
+  background-color: rgba(34, 40, 49, 1);
+  color: white;
+  border-radius: 5px;
+}
+/*ESTILOS DE LAS CARTAS*/
+.Center-Block .Cards {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+}
+.Cards .card-stack {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  margin: 50px;
+  width: 100%;
+  padding: 10px 20px;
+  transition: all 400ms ease;
+  cursor: default;
+}
+.card-stack:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.card-stack .image {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-bottom-left-radius: 50% 20%;
+}
+.image img {
+  max-width: 150px;
+  border-radius: 50%;
+}
+.card-stack .contenido {
+  background-color: #1e1e2d;
+  text-align: left;
+  border-radius: 5px;
+}
+.contenido h4 {
+  color: white;
+}
+.contenido p {
+  color: rgb(255, 255, 255);
+}
+.contenido b {
+  color: white;
+}
+
+/*ESTILOS PARA RESPOSIVO*/
+@media (max-width: 768px) {
+  .Center-Block h3 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .option {
+    flex-direction: column;
+    text-align: center;
+  }
+  .option ul {
+    flex-direction: column;
+  }
+  .option ul li {
+    margin-bottom: 10px;
+  }
+  .Center-Block .Cards {
+    flex-direction: column;
+    text-align: center;
+  }
+  .Cards .card-stack {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px;
+  }
+  .card-stack .contenido {
+    flex-direction: column;
+    text-align: center;
+  }
 }
