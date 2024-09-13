@@ -255,4 +255,14 @@ footer .Conteiners {
     flex-direction: column;
     text-align: center;
   }
+  .Conteiners .Sub01 {
+    flex-direction: column;
+  }
+  .Sub01 .info h4,
+  .Sub01 .info  b {
+    text-align: center;
+  }
+  .info #btnSecond {
+    text-align: center;
+  }
 }

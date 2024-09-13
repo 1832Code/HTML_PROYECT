@@ -41,9 +41,12 @@
 /*ESTILOS DE LAS CARTAS*/
 .Center-Block .Cards {
   background-color: rgb(255, 255, 255);
-  width: 100%;
   max-width: 1100px;
-  display: flex;
+  margin: auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+  grid-gap: 20px; /* Espacio entre las cartas */
 }
 .Cards .card-stack {
   background-color: #f7f7f7;
@@ -104,12 +107,11 @@
     margin-bottom: 10px;
   }
   .Center-Block .Cards {
-    flex-direction: column;
-    text-align: center;
+    grid-template-columns: 1fr;
+    /* Cambia a 1 columnas en pantallas más pequeñas */
   }
   .Cards .card-stack {
-    flex-direction: column;
-    text-align: center;
+    grid-template-columns: 1fr; /*Cambia a 1 columna en pantalla muy pequeñas*/
     padding: 10px 20px;
     margin: 10px;
   }

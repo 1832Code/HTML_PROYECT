@@ -1,0 +1,58 @@
+.Abouts {
+  background-color: rgba(34, 40, 49, 1);
+}
+.Abouts .About {
+  display: flex;
+  max-width: 100vh;
+  margin: auto;
+}
+
+.About img {
+  max-width: 400px;
+  margin: auto;
+  padding: 40px 20px;
+}
+.About .Conten {
+  font-family: "Times New Roman", Times, serif;
+}
+.Conten h4 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  text-align: left;
+  font-size: 29px;
+  color: white;
+}
+.Conten p {
+  font-size: 12px;
+}
+
+.Conten button {
+  border: none;
+  background-color: rgba(255, 190, 51, 1);
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .Abouts .About {
+    flex-direction: column;
+  }
+  .About .img {
+    text-align: center;
+  }
+  .About .img img {
+    margin: 0;
+  }
+  .About .Conten {
+    text-align: center;
+  }
+  .Conten h4 {
+    text-align: center;
+  }
+  .Conten p {
+    text-align: center;
+  }
+}
